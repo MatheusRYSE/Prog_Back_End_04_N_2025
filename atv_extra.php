@@ -14,9 +14,11 @@
 
     <?php
 
+    if(count($_POST)==0)exit;
+
     $idade = $_POST["idade"];
 
-    if($idade < 0 && $idade == 0) {
+    if($idade <= 0) {
         echo "Idade invalida.";
     } elseif($idade < 13) {
         echo "Você não pode criar conta, idade miníma de 13 anos.";
