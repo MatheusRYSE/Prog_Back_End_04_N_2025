@@ -10,11 +10,13 @@
 
     <form method="post" action = "">
          Idade <input type="text" name="idade" required><br>
-        <input type="submit" value="Enviar."><br>
+        <input type="submit" value="Enviar."><hr>
 
     <?php
 
     if(count($_POST)==0)exit;
+    $idade=$_POST["idade"];
+    echo "Idade digitada : </b>$idade</b><br>";
 
     $idade = $_POST["idade"];
 
